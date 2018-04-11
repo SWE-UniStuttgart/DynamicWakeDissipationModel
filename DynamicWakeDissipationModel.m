@@ -2,7 +2,9 @@
 clear all
 close all
 clc
-stop(timerfindall);
+if ~isempty(timerfindall)
+    stop(timerfindall);
+end
 
 %addpath
 addpath('./core/');
